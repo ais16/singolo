@@ -126,19 +126,14 @@ main #slider {
   background-color: coral;
 }
 
-/*Footer part*/
-footer {
-  margin: 0 auto;
-  padding: 0;
+/*Services part*/
 
-  /*position: relative;*/
-}
-#footer {
-  background-image: url("assets/images/Bg-footer.png");
+#services {
+  background-image: url("assets/images/Bg-services.png");
   min-height: 500px;
   background-repeat: no-repeat;
 }
-.footer__description {
+.services__description {
   display: flex;
   position: absolute;
   font-family: "Lato", sans-serif;
@@ -147,7 +142,7 @@ footer {
 
   text-align: left;
 }
-.footer__description h1 {
+.services__description h1 {
   font-size: 30px;
   margin-top: 69px;
   margin-left: 41px;
@@ -156,7 +151,7 @@ footer {
   width: 171px;
   height: 23px;
 }
-.footer__description p {
+.services__description p {
   font-size: 17px;
   line-height: 30px;
   width: 939px;
@@ -169,7 +164,7 @@ footer {
   margin-left: -172px;
   margin-bottom: 0;
 }
-.footer__container {
+.services__container {
   width: 958px;
   height: 258px;
   display: flex;
@@ -186,17 +181,17 @@ footer {
 
   color: rgba(118, 126, 158, 255);
 }
-.footer__custom-design {
+.services__custom-design {
   width: 299px;
   height: 90px;
 }
-.footer__custom-design img {
+.services__custom-design img {
   width: 59px;
   height: 59px;
   margin: 0;
   padding: 0;
 }
-.footer__custom-design h2 {
+.services__custom-design h2 {
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -210,7 +205,7 @@ footer {
   padding: 0;
   margin-bottom: 0;
 }
-.footer__custom-design p {
+.services__custom-design p {
   width: 219px;
   height: 128px;
   font-size: 12px;
@@ -222,17 +217,17 @@ footer {
   padding: 0;
   margin-left: 80px;
 }
-.footer__innovative-ideas {
+.services__innovative-ideas {
   width: 319px;
   height: 90px;
 }
-.footer__innovative-ideas img {
+.services__innovative-ideas img {
   width: 59px;
   height: 59px;
   margin-left: 20px;
   padding: 0;
 }
-.footer__innovative-ideas h2 {
+.services__innovative-ideas h2 {
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -246,7 +241,7 @@ footer {
   margin-top: -66px;
   margin-bottom: 0;
 }
-.footer__innovative-ideas p {
+.services__innovative-ideas p {
   width: 219px;
   height: 128px;
   font-size: 12px;
@@ -259,17 +254,17 @@ footer {
   margin-left: 100px;
 }
 
-.footer__love-isthe-answer {
+.services__love-isthe-answer {
   width: 319px;
   height: 90px;
 }
-.footer__love-isthe-answer img {
+.services__love-isthe-answer img {
   width: 59px;
   height: 59px;
   margin-left: 20px;
   padding: 0;
 }
-.footer__love-isthe-answer h2 {
+.services__love-isthe-answer h2 {
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -283,7 +278,7 @@ footer {
   margin-top: -66px;
   margin-bottom: 0;
 }
-.footer__love-isthe-answer p {
+.services__love-isthe-answer p {
   width: 219px;
   height: 128px;
   font-size: 12px;
@@ -295,18 +290,18 @@ footer {
   padding: 0;
   margin-left: 100px;
 }
-.footer__responsive-layout {
+.services__responsive-layout {
   width: 299px;
   height: 90px;
   margin-top: 32px;
 }
-.footer__responsive-layout img {
+.services__responsive-layout img {
   width: 59px;
   height: 59px;
   margin: 0;
   padding: 0;
 }
-.footer__responsive-layout h2 {
+.services__responsive-layout h2 {
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -319,7 +314,7 @@ footer {
   margin-left: 80px;
   margin-top: -65px;
 }
-.footer__responsive-layout p {
+.services__responsive-layout p {
   width: 219px;
 
   font-size: 12px;
@@ -332,17 +327,17 @@ footer {
   margin-left: 80px;
   margin-top: -5px;
 }
-.footer__support {
+.services__support {
   width: 319px;
   height: 90px;
 }
-.footer__support img {
+.services__support img {
   width: 59px;
   height: 59px;
   margin-left: 20px;
   padding: 0;
 }
-.footer__support h2 {
+.services__support h2 {
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -355,7 +350,7 @@ footer {
   margin-left: 100px;
   margin-top: -65px;
 }
-.footer__support p {
+.services__support p {
   width: 219px;
 
   font-size: 12px;
@@ -368,17 +363,17 @@ footer {
   margin-left: 100px;
   margin-top: -2px;
 }
-.footer__fell-likea-star {
+.services__fell-likea-star {
   width: 319px;
   height: 90px;
 }
-.footer__fell-likea-star img {
+.services__fell-likea-star img {
   width: 59px;
   height: 59px;
   margin-left: 20px;
   padding: 0;
 }
-.footer__fell-likea-star h2 {
+.services__fell-likea-star h2 {
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -391,7 +386,7 @@ footer {
   margin-left: 100px;
   margin-top: -65px;
 }
-.footer__fell-likea-star p {
+.services__fell-likea-star p {
   width: 219px;
 
   font-size: 12px;
