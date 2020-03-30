@@ -12,6 +12,11 @@
   </head>
   <body>
     <header class="header">
+      <div class="triple-line-menu">
+        <div class="triple-line-item"></div>
+        <div class="triple-line-item"></div>
+        <div class="triple-line-item"></div>
+      </div>
       <div class="header__logo">
         <h1>
           <a href="#">Singolo<span style="color: #f06c64;">*</span></a>
@@ -20,39 +25,42 @@
       <div class="header__navigation">
         <ul class="nav__list">
           <li class="nav__home">
-            <a href="#"><span style="color: #f06c64;">Home</span></a>
+            <a href="#" class="active">Home</a>
           </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#get-a-quote">Contact</a></li>
         </ul>
       </div>
     </header>
     <main>
-      <section id="slider">
+      <div class="overlay-mobile"></div>
+      <section id="slider" class="slider">
         <div class="slider__left-arrow">
           <button class="left-arrow__button">
             <img src="assets/images/chev.png" alt="Switch slide to the left" />
           </button>
         </div>
-        <div class="slider__vertical-phone">
-          <img
-            src="assets/images/phone-vertical.png"
-            alt="Vertical phone image"
-          />
-        </div>
-        <div class="slider__vertical-screen">
-          <img src="assets/images/Layer 6.png" alt="Vertical phone screen" />
-        </div>
-        <div class="slider__horizontal-phone">
-          <img
-            src="assets/images/phone-horizontal.png"
-            alt="Horizontal phone image"
-          />
-        </div>
-        <div class="slider__horizontal-image">
-          <img src="assets/images/Layer 5.png" alt="Horizontal phone screen" />
+
+        <div class="phones activated">
+          <div class="slider__vertical-phone">
+            <img
+              src="assets/images/iPhone_Vertical.png"
+              alt="Vertical phone image"
+            />
+            <div class="home-btn"></div>
+            <div class="black-screen" hidden="true"></div>
+          </div>
+
+          <div class="slider__horizontal-phone">
+            <img
+              src="assets/images/iPhone_Horizontal.png"
+              alt="Horizontal phone image"
+            />
+            <div class="home-btn"></div>
+            <div class="black-screen" hidden="true"></div>
+          </div>
         </div>
         <div class="slider__right-arrow">
           <button class="right-arrow__button">
@@ -61,6 +69,9 @@
               alt="Switch slider to the right"
             />
           </button>
+        </div>
+        <div class="phones slide2">
+          <img src="assets/images/Slider-2.png" alt="vertical iphone-2" />
         </div>
       </section>
 
@@ -139,56 +150,56 @@
           </div>
           <div class="portfolio__links">
             <ul class="links__buttons">
-              <button class="links__buttons__all">
-                <li>All</li>
-              </button>
-              <button class="links__buttons__web">
-                <li>Web Design</li>
-              </button>
-              <button class="links__buttons__graphic">
-                <li>Graphic Design</li>
-              </button>
-              <button class="links__buttons__art">
-                <li>Artwork</li>
-              </button>
+              <li class="links__buttons__all">
+                <button class="active">All</button>
+              </li>
+              <li class="links__buttons__web">
+                <button>Web Design</button>
+              </li>
+              <li class="links__buttons__graphic">
+                <button>Graphic Design</button>
+              </li>
+              <li class="links__buttons__art">
+                <button>Artwork</button>
+              </li>
             </ul>
           </div>
           <div class="portfolio__pictures">
             <ul class="pictures__lists">
-              <li>
+              <li class="pictures-item active">
                 <a href="#"><img src="assets/images/layer-1.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-2.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-3.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-4.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-5.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-6.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-7.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-8.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-9.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-10.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-11.png" alt=""/></a>
               </li>
-              <li>
+              <li class="pictures-item">
                 <a href="#"><img src="assets/images/layer-12.png" alt=""/></a>
               </li>
             </ul>
@@ -279,8 +290,25 @@
       </section>
 
       <!--part 3 singolo-3-->
-      <section class="get-a-quote">
+      <section class="get-a-quote" id="get-a-quote">
         <div class="get-a-quote__container">
+          <div class="popup-box" hidden="true">
+            <div class="popup">
+              <p>Sent.</p>
+              <p></p>
+              <p></p>
+
+              <button
+                type="button"
+                id="ok-btn"
+                class="submitbtn"
+                value="submit"
+                name="ok"
+              >
+                Ok!
+              </button>
+            </div>
+          </div>
           <div class="get-a-quote__description">
             <h2>Get a Quote</h2>
             <p>
@@ -291,10 +319,11 @@
             </p>
           </div>
           <div class="form__apply">
-            <form action="/action-singolo.com" target="_blank" method="POST">
+            <form id="form" method="POST">
               <label for="name"></label><br />
               <input
                 type="text"
+                required
                 id="name"
                 name="name"
                 placeholder="Name (Required)"
@@ -302,6 +331,7 @@
               <label for="email"></label><br />
               <input
                 type="text"
+                required
                 id="email"
                 name="email"
                 placeholder="Email (Required)"
@@ -323,7 +353,7 @@
                 rows="10"
               ></textarea>
               <br />
-              <input type="submit" value="Submit" />
+              <input id="submit" type="submit" value="Submit" />
             </form>
           </div>
           <div class="contact__information">
@@ -395,6 +425,6 @@
       </section>
     </footer>
     <!--part 3 singolo-3-END -->
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
